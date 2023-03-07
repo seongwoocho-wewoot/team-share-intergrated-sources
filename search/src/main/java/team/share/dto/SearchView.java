@@ -1,5 +1,6 @@
 package team.share.dto;
 
+import constant.SearchType;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,10 +11,11 @@ public class SearchView {
 
     private Long id;
     private String name;
-    private String type;
+    private SearchType type;
 
     @Builder
-    public SearchView(Long id, String name, String type) {
+
+    public SearchView(Long id, String name, SearchType type) {
         this.id = id;
         this.name = name;
         this.type = type;

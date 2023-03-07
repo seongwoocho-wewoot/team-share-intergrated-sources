@@ -1,5 +1,6 @@
 package team.share.support;
 
+import constant.SearchType;
 import team.share.dto.SearchView;
 
 import javax.transaction.NotSupportedException;
@@ -23,11 +24,11 @@ public class FakeDataGenerator {
     private static List<SearchView> innerGenerateManually() {
 
         return List.of(
-                new SearchView(1L, "사랑스러운 치삼 만화 1", "Type A"),
-                new SearchView(2L, "사랑스러운 치삼 만화 2", "Type B"),
-                new SearchView(3L, "사랑스러운 치삼 만화 3", "Type C"),
-                new SearchView(4L, "사랑스러운 치삼 만화 4", "Type A"),
-                new SearchView(5L, "사랑스러운 치삼 만화 5", "Type B")
+                new SearchView(1L, "사랑스러운 치삼 만화 1", SearchType.TYPE_A),
+                new SearchView(2L, "사랑스러운 치삼 만화 2", SearchType.TYPE_B),
+                new SearchView(3L, "사랑스러운 치삼 만화 3", SearchType.TYPE_C),
+                new SearchView(4L, "사랑스러운 치삼 만화 4", SearchType.TYPE_A),
+                new SearchView(5L, "사랑스러운 치삼 만화 5", SearchType.TYPE_B)
         );
     }
 
@@ -36,7 +37,7 @@ public class FakeDataGenerator {
                 .mapToObj(it -> SearchView.builder()
                         .id(number)
                         .name("사랑스러운 치삼 만화" + number)
-                        .type("foo")
+                        .type(SearchType.TYPE_A)
                         .build()
                 )
                 .collect(toList());

@@ -1,5 +1,6 @@
 package team.share.controller;
 
+import constant.SearchType;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +19,7 @@ public class SearchController {
     private final SearchQueryRepository repository;
 
     @GetMapping("/search")
-    public List<SearchView> search(@RequestParam String content, @RequestParam("search-type") String searchType) {
+    public List<SearchView> search(@RequestParam String content, @RequestParam("search-type") SearchType searchType) {
 
         return repository.findSearchDataBy(content, searchType);
     }
