@@ -1,5 +1,6 @@
 package team.share.repository;
 
+import org.springframework.stereotype.Component;
 import team.share.dto.SearchView;
 import team.share.support.FakeDataGenerator;
 
@@ -8,6 +9,7 @@ import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toList;
 
+@Component
 public class SearchQueryRepository {
 
     public List<SearchView> findSearchDataBy(String content, String searchType) {
@@ -15,7 +17,12 @@ public class SearchQueryRepository {
         List<SearchView> views = FakeDataGenerator.generate(5L);
 
         return views.stream()
-                .filter(view -> view.equals(content) && view.equals(searchType))
+                .filter(view -> matches(content, searchType, view))
                 .collect(toList());
+    }
+
+    private static boolean matches(String content, String searchType, SearchView view) {
+
+        return view.getName().toLowerCase().contains(content.toLowerCase()) && view.getType().equals(searchType);
     }
 }
