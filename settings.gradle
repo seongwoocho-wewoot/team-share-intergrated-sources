@@ -1,2 +1,2 @@
 rootProject.name = 'intergrated'
-include 'search', 'general-collaborate'
+include 'search'
