@@ -1,2 +1,4 @@
 rootProject.name = 'intergrated'
 include 'search'
+include 'multi-purpose'
+
