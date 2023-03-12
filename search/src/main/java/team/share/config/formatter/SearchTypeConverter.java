@@ -1,6 +1,6 @@
 package team.share.config.formatter;
 
-import constant.SearchType;
+import team.share.constant.SearchType;
 import org.springframework.core.convert.converter.Converter;
 
 public class SearchTypeConverter implements Converter<String, SearchType> {

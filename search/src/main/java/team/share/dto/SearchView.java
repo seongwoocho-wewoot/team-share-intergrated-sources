@@ -1,6 +1,6 @@
 package team.share.dto;
 
-import constant.SearchType;
+import team.share.constant.SearchType;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,0 +1,22 @@
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+
+    // jpa
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // web MVC
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // dev tools
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+    // test
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // lombok
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    // H2
+    implementation 'com.h2database:h2'
+}

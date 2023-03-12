@@ -1,4 +1,4 @@
 rootProject.name = 'intergrated'
-include 'search'
-include 'multi-purpose'
-
+include 'search',
+        'multi-purpose',
+        'hello-dir'

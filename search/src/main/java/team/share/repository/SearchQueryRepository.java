@@ -1,12 +1,11 @@
 package team.share.repository;
 
-import constant.SearchType;
+import team.share.constant.SearchType;
 import org.springframework.stereotype.Component;
 import team.share.dto.SearchView;
 import team.share.support.FakeDataGenerator;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toList;
 

@@ -1,6 +1,6 @@
 package team.share.controller;
 
-import constant.SearchType;
+import team.share.constant.SearchType;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package constant;
+package team.share.constant;
 
 import java.util.Arrays;
 

@@ -1,6 +1,6 @@
 package team.share.support;
 
-import constant.SearchType;
+import team.share.constant.SearchType;
 import team.share.dto.SearchView;
 
 import javax.transaction.NotSupportedException;
