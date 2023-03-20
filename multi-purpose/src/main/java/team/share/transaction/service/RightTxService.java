@@ -1,4 +1,4 @@
-package team.share.service;
+package team.share.transaction.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

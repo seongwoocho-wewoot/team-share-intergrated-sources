@@ -1,4 +1,4 @@
-package team.share.controller;
+package team.share.transaction.controller;
 
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionSynchronizationManager;

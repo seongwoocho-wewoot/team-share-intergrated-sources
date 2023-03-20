@@ -1,10 +1,10 @@
-package team.share.controller;
+package team.share.transaction.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import team.share.service.RightTxService;
+import team.share.transaction.service.RightTxService;
 
 @RestController
 @RequiredArgsConstructor

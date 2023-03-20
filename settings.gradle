@@ -1,4 +1,5 @@
 rootProject.name = 'intergrated'
 include 'search',
         'multi-purpose',
-        'test-querydsl'
+        'test-querydsl',
+        'multi-purpose-non-framework'
